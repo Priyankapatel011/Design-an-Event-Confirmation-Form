@@ -25,42 +25,42 @@ export function EventRSVPForm() {
   return (
     <>
       <form onSubmit={handleBtn}>
-        <label>
+        <label for="name">
           Name: 
           <br/>
-          <input type="text" value={name} onChange={(e) => setName(e.target.value)}
+          <input id="name" type="text" value={name} onChange={(e) => setName(e.target.value)}
           required/>
           <br/>
         </label>
         
-        <label>
+        <label for="email">
           Email:
           <br/>
-          <input type="email" value={email} onChange={(e) => setEmail(e.target.value)} required />
+          <input id="email" type="email" value={email} onChange={(e) => setEmail(e.target.value)} required />
           <br/>
         </label>
         
-        <label>
+        <label for="attendees">
           Number of Attendees:
           <br/>
-          <input type="number" value={attendees} min="1" onChange={(e) => setAttendees(e.target.value)} required />
+          <input id="attendees" type="number" value={attendees} min="1" onChange={(e) => setAttendees(e.target.value)} required />
           <br/>
         </label>
         
-        <label>
+        <label for="dietary">
           Dietary Preferences: 
           <br/>
-          <input type="text"  value={dietary} placeholder="Dietary Preferences: (Optional)" onChange={(e) => setDietary(e.target.value)}/>
+          <input id="dietary" type="text"  value={dietary} placeholder="Dietary Preferences: (Optional)" onChange={(e) => setDietary(e.target.value)}/>
           <br/>
         </label>
         
-        <label>
+        <label for="guests">
           Bringing additional guests?
-          <input type="checkbox" onChange={(e) => setChecked(e.target.checked)} />
+          <input id="guests" type="checkbox" onChange={(e) => setChecked(e.target.checked)} />
           <br/>
         </label>
 
-        <button type="submit">Submit RSVP</button>
+        <button type="submit" id="btn">Submit RSVP</button>
       </form> 
 
       {submitted && 
