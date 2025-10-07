@@ -1,0 +1,15 @@
+#name, #email, #attendees, #dietary{
+  width: 300px;
+  height: 30px;
+  margin-bottom: 10px
+}
+
+#guests{
+  margin-bottom: 20px
+}
+
+#btn{
+  width: 100px;
+  height: 40px;
+  border-radius: 10px;
+}
